@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Storyboard — Shanoya Robinson</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+
+  <header>
+    <div class="brand">
+      <img src="../Assets/shanoya_logo.png" alt="Shanoya Robinson Logo" id="logo">
+      <div>
+        <h1>Shanoya Robinson</h1>
+        <p class="demographics">ID: 2405418 &bull; BSc Computer Science &bull; UTech Jamaica</p>
+      </div>
+    </div>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="personality.html">Personality</a></li>
+        <li><a href="storyboard.html" class="active">Storyboard</a></li>
+        <li><a href="references.html">References</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero-section">
+      <h1>Website Storyboard</h1>
+      <p>Design planning, layout wireframes, and project resources</p>
+    </section>
+
+    <!-- Mobile Layout Wireframe -->
+    <section class="card fade-in">
+      <h2>Mobile Layout (min 600px)</h2>
+      <p>The mobile layout uses a single-column vertical flow. All &lt;div&gt; groups stack top-to-bottom for easy thumb navigation. Navigation links display vertically for easy thumb access.</p>
+      <figure class="wireframe-figure">
+        <img src="../Assets/wireframe_mobile.png" alt="Mobile wireframe layout showing single-column stacked sections with header, nav, hero, cards and footer" class="wireframe-img">
+        <figcaption>Mobile wireframe &mdash; single column, stacked &lt;div&gt; groups (min 600px)</figcaption>
+      </figure>
+    </section>
+
+    <!-- Desktop Layout Wireframe -->
+    <section class="card fade-in">
+      <h2>Desktop Layout (min 950px)</h2>
+      <p>The desktop layout centres all content within a max-width of 1200px. The header uses Flexbox to place the brand on the left and navigation on the right. The skills section uses CSS Grid (2 columns). Cards have enhanced hover effects and generous padding.</p>
+      <figure class="wireframe-figure">
+        <img src="../Assets/wireframe_desktop.png" alt="Desktop wireframe layout showing horizontal header, two-column rows, CSS grid skills section and full-width cards" class="wireframe-img">
+        <figcaption>Desktop wireframe &mdash; horizontal header, two-column rows, CSS Grid skills section (min 950px)</figcaption>
+      </figure>
+    </section>
+
+    <!-- Design Elements -->
+    <section class="card fade-in">
+      <h2>Colour Palette &amp; Design Tokens</h2>
+
+      <div class="palette-grid">
+        <div class="swatch" style="background:#2c3e50;">
+          <span class="swatch-label">Primary<br>#2C3E50<br>RGB(44,62,80)</span>
+        </div>
+        <div class="swatch" style="background:#3498db;">
+          <span class="swatch-label">Secondary<br>#3498DB<br>RGB(52,152,219)</span>
+        </div>
+        <div class="swatch" style="background:#e74c3c;">
+          <span class="swatch-label" style="color:#fff;">Accent<br>#E74C3C<br>RGB(231,76,60)</span>
+        </div>
+        <div class="swatch" style="background:#f4f4f4; border: 1px solid #ccc;">
+          <span class="swatch-label" style="color:#333;">Background<br>#F4F4F4<br>RGB(244,244,244)</span>
+        </div>
+        <div class="swatch" style="background:#ffffff; border: 1px solid #ccc;">
+          <span class="swatch-label" style="color:#333;">Card BG<br>#FFFFFF<br>RGB(255,255,255)</span>
+        </div>
+        <div class="swatch" style="background:#333333;">
+          <span class="swatch-label">Text<br>#333333<br>RGB(51,51,51)</span>
+        </div>
+      </div>
+
+      <h3>Typography</h3>
+      <ul>
+        <li><strong>Body Font:</strong> &ldquo;Segoe UI&rdquo;, Tahoma, Geneva, Verdana, sans-serif</li>
+        <li><strong>Heading Font:</strong> Georgia, &ldquo;Times New Roman&rdquo;, serif</li>
+        <li><strong>Root font-size:</strong> 16px (browser default)</li>
+        <li><strong>Root font-weight:</strong> 400 (body), 700 (headings)</li>
+        <li><strong>Line-height:</strong> 1.6</li>
+      </ul>
+
+      <h3>Logo &amp; Icon</h3>
+      <ul>
+        <li><strong>Logo:</strong> shanoya_logo.png &mdash; Butterfly with circuit-board wings, medical cross, DNA helix</li>
+        <li><strong>Logo dimensions (display):</strong> 60px &times; 60px (nav), 200px &times; 200px (profile)</li>
+        <li><strong>Format:</strong> PNG with transparent background</li>
+      </ul>
+
+      <h3>Layout System</h3>
+      <ul>
+        <li><strong>Layout engine:</strong> CSS Flexbox (primary) &mdash; used for header brand, nav, traits grid, skills grid</li>
+        <li><strong>Breakpoints:</strong> min-width: 600px (mobile) &nbsp;|&nbsp; min-width: 950px (desktop)</li>
+        <li><strong>Max content width:</strong> 1200px, centred with auto margins</li>
+        <li><strong>Card border-radius:</strong> 8px</li>
+        <li><strong>Card left accent:</strong> 4px solid var(--secondary-color)</li>
+      </ul>
+    </section>
+
+    <!-- Links section -->
+    <section class="card fade-in">
+      <h2>Project Links</h2>
+      <ul>
+        <li><strong>GitHub Repository:</strong> <a href="https://github.com/CodewithShanoya/Srobinson_2405418_utech" target="_blank" rel="noopener noreferrer">github.com/CodewithShanoya/Srobinson_2405418_utech</a></li>
+        <li><strong>Live Hosting Link:</strong> <a href="https://codewithshanoya.github.io/Srobinson_2405418_utech/" target="_blank" rel="noopener noreferrer">codewithshanoya.github.io/Srobinson_2405418_utech/</a> </li>
+        <li><strong>Storyboard PDF:</strong> storyboard-2405418.pdf <em>(included in repository)</em></li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+    <address>
+      <p>&copy; 2026 Shanoya Robinson &mdash; UTech Jamaica &bull;
+      <a href="mailto:shanoyasrobinson@students.utech.edu.jm">shanoyasrobinson@students.utech.edu.jm</a></p>
+    </address>
+  </footer>
+
+</body>
+</html>
